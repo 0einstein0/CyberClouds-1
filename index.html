@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="icon" href="assets/Logo-dark.png">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+/>
+ 
+</head>
+
+<body >
+<div class="bg pt-3">
+       <!------------------------------NavBar----------------------------------------->
+    
+      <nav class="navbar  navbar-expand-lg pt-4 navbar-dark "  >
+        
+        <div class="container text-white ">
+            
+             
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=" navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse animate__animated animate__zoomIn pb-1 navbar-collapse justify-content-center "  id="navbarResponsive">
+                <ul class="navbar-nav  text-uppercase mx-auto ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                  <li class="nav-item "><a class="nav-link " href="">About</a></li>
+                     <li class="nav-item  "><a class="nav-link  " href="">Portfolio</a></li>
+                      <li class="nav-item  "><a class="nav-link  " href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="">Contact</a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+    </nav>
+
+    <!------------------------------Section 1----------------------------------------->
+    
+    <section class="ftco-section">
+		<div class="container ">
+			<div class="row justify-content-center">
+				
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="wrapper animate__animated animate__zoomIn">
+						<div class="row no-gutters">
+							<div class=" contact-wrap col-md-6">
+								<div class=" wow animate__animated animate__fadeIn   w-100 p-lg-5 p-4" data-wow-delay="1s">
+									<h3 class="mb-4">Send Message</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12 pt-3"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+                                            <div class="col-md-12 pt-3"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="cname" id="cname" placeholder="Company Name">
+												</div>
+											</div>
+											<div class="col-md-12 pt-3">
+												<div class="form-group">
+													<input type="number" class="form-control" name="number" id="number" placeholder="Phone No.">
+												</div>
+											</div>
+                                            
+                                            <div class="col-md-12 pt-4 callTime">
+                                                <label>Best Time to Call</label>
+												<div class="form-group py-3">
+                                                    
+													<div class="form-check  form-check-inline">
+                                                       
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Morning</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label " for="inlineRadio2">Afternoon</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                        <label class="form-check-label" for="inlineRadio3">Evening </label>
+                                                      </div>
+												</div>
+											</div>
+                                            <div class="col-md-12 ">
+												<div class="form-group">
+                                                    <label id="img_category_label"class="field"for="img_category"data-value="">
+                                                        <span  >Select Service</span>
+                                                        <div id="img_category"class="psuedo_select"name="img_category">
+                                                            <span class="selected"></span>
+                                                            <ul id="img_category_options"class="options">
+
+                                                                <li class="option"data-value="1">Website</li>
+                                                                <li class="option"data-value="2">Custom Programming</li>
+                                                                <li class="option"data-value="3">Design Work</li>
+                                                                <li class="option"data-value="4">Logo</li>
+                                                                <li class="option"data-value="5">Branding</li>
+                                                                <li class="option"data-value="6">Residential</li>
+                                                                <li class="option"data-value="7">Data Entry</li>
+                                                                <li class="option"data-value="8">Backoffice Jobs</li>
+                                                                <li class="option"data-value="9">Other</li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </label>
+                                                      
+                                                    </div>
+											</div>
+											<div class="col-md-12 pt-4">
+												<div class="form-group">
+													<textarea name="message" class="form-control pt-2" id="message" cols="30" rows="4" placeholder="Tell us what you need"></textarea>
+												</div>
+											</div>
+                                            <div class="col-md-12 pt-5">
+												<div class="form-group">
+                                                    <div class="g-recaptcha" data-sitekey="6LeySRIUAAAAAJnYn_JKQ8i2UfH85wKA-YgSYACL"></div> 
+                                                
+                                                </div>
+											</div>
+											<div class="col-md-12 pt-5">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex align-items-stretch">
+								<div class="info-wrap wow animate__animated animate__fadeIn   w-100 p-lg-5 p-4 img" data-wow-delay="1s">
+									<h3>Contact Us</h3>
+									<p class="mb-4 mb-2 ">We're open for any suggestion or just to have a chat.</p>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex  align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text px-3">
+					            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text px-3">
+					            <p><span>Phone:</span> <a href="tel://1234567920">+1135 2355 98</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text px-3">
+					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@cyberclouds.com</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text px-3">
+					            <p><span>Website</span> <a href="#">cyberclouds.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+        <!------------------------------Footer----------------------------------------->
+
+
+        <footer class="container-fluid bg-grey py-5">
+            <div class="container wow animate__animated animate__slideInUp">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="row ">
+                        <div class="col-md-6  ">
+                           <div class="logo-part ">
+                              <h3 class="pb-4">CyberClouds</h3>
+                              <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                              <p>Use this tool as test data for an automated system or find your next pen</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6 px-4">
+                           <h6> About Company</h6>
+                           <p>But horizontal lines can only be a full pixel high.</p>
+                           <a href="#" class="btn-footer"> More Info </a><br>
+                           <a href="#" class="btn-footer"> Contact Us</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 ">
+                     <div class="row  ">
+                        <div class="col-md-6 px-4">
+                           <h6> Help us</h6>
+                           <div class="row ">
+                              <div class="col-md-6">
+                                 <ul>
+                                    <li> <a href="#"> Home</a> </li>
+                                    <li> <a href="#"> About</a> </li>
+                                    <li> <a href="#"> Service</a> </li>
+                                    <li> <a href="#"> Team</a> </li>
+                                    <li> <a href="#"> Help</a> </li>
+                                    <li> <a href="#"> Contact</a> </li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 px-4">
+                                 <ul>
+                                    <li> <a href="#"> Cab Faciliy</a> </li>
+                                    <li> <a href="#"> Fax</a> </li>
+                                    <li> <a href="#"> Terms</a> </li>
+                                    <li> <a href="#"> Policy</a> </li>
+                                    <li> <a href="#"> Refunds</a> </li>
+                                    <li> <a href="#"> Paypal</a> </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 ">
+                           <h6> Newsletter</h6>
+                           <div class="social">
+                              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                           </div>
+                           <form class="form-footer my-3">
+                              <input type="text"  placeholder="search here...." name="search">
+                              <input type="button" value="Go" >
+                           </form>
+                            </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+        </footer>
+
+   <!------------------------------Script----------------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+    </body>
+    </html>
